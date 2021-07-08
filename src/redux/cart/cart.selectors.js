@@ -1,4 +1,4 @@
-import {createSelector } from 'reselect'
+import { createSelector } from 'reselect';
 
 const selectCart = state => state.cart;
 
@@ -30,4 +30,4 @@ export const selectCartTotal = createSelector(
         accumalatedQuantity + cartItem.quantity * cartItem.price,
       0
     )
-)
+);
